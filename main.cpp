@@ -3,10 +3,12 @@
 #include <list>
 #include <sstream>
 #include <string.h>
-//#include "r_star_tree.hpp"
 #include "Actions.h"
 #include "Actions.cpp"
 #include <cstdio>
+#include <string>
+#include <cstdlib>
+//#include "r_star_tree.hpp"
 using namespace std;
 /*
 //Ένα πρόγραμμα C++ αρχίζει με τη main()
@@ -16,10 +18,54 @@ static std::string const COULD_NOT_OPEN = "Could not open ";
 */
 int main ()
 {
+    /*
     Actions x;
     x.add_entry("BlockedMap.osm","Amazing.osm");
+    if(remove("BlockedMap.osm")==0){
+        rename("NewFile.osm","BlockedMap.osm");
+    }else{
+        cout<<"OH NO"<<endl;
+    }
     remove("copyFile.osm");
+    */
+    ifstream in("BlockedMap.osm");
+    ofstream out("BlockedMap.osm",ios::app);
+    string v1, v2, v3, v4;
+    in >> v1 >> v2 >> v3 >> v4;
+    cout<<v3<<endl;
+    v3 = "Himalaka"; // <- Do whatever you need to here.
+    out << v1 << " " << v2 << " " << v3 << " " << v4;
+    out << in.rdbuf();
+    out.close();
+    in.close();
+    return 0;
     /*
+    string copyString;
+    ifstream oldFileR;
+    oldFileR.open("BlockedMap.osm", ios::app);
+    ofstream temp;
+    temp.open("NewFile.osm",ios::app);
+    string deleteline="</block>";
+    string findBlock="<block id=\"5\"";
+    cout<<findBlock<<endl;
+    string id;
+    bool flag=true;
+    while (getline(oldFileR, copyString)) {
+        //Βρίσκει το τελευταίο μπλοκ
+        int pos = copyString.find('</block>');
+        id = copyString.substr(0, pos+1);
+        if (deleteline.compare(id)!=0 || flag) {
+            temp << copyString +"\n";
+            if(copyString.compare(findBlock)==0){
+                flag=false;
+            }
+        }
+        //copyString.replace(copyString.find(deleteline),deleteline.length(),"");
+        //temp << copyString << endl;
+    }
+    */
+}
+/*
     ifstream inputFile;
     ofstream copyFile;
     string numOfBlocks;
@@ -76,8 +122,14 @@ int main ()
     copyFile.close();
     cout<<"\""<<endl;
     */
-    return 0;
-}/*
+
+
+
+
+
+
+
+/*
 string copyString;
     ifstream copyFileRead;
     copyFileRead.open(COPY_FILE_NAME);
