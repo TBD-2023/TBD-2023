@@ -19,9 +19,8 @@ std::string getSubstringBetween(std::string input){
 Actions::Actions(){}
 void Actions::add_entry(string existingFile, string newFile){
     ifstream oldFileR,newFileR;
-    ofstream copyFile,oldFileW;
+    ofstream copyFile;
     oldFileR.open(existingFile);
-    oldFileW.open(existingFile,ios::app);
     //app so it doesn't overwrite the file
     copyFile.open(COPY_FILE_NAME,ios::app);
     newFileR.open(newFile);
@@ -64,19 +63,16 @@ void Actions::add_entry(string existingFile, string newFile){
     int file_size = in_file.tellg();
     //cout<<"Size of the file is"<<" "<< file_size<<" "<<"bytes";
     copyFile.close();
+    copyFile.open(COPY_FILE_NAME);
     newFileR.close();
     newFileR.open(newFile);
     oldFileR.close();
     oldFileR.open(existingFile, ios::app);
-    oldFileW.close();
-    oldFileW.open(existingFile,ios::app);
+    //checking if the new block will be over 32kb
     if(file_size<32000){
-        ofstream temp;
-        temp.open("NewFile.osm",ios::app);
         string id;
         bool flag=true;
         string deleteline="</block>";
-        cout<<"OH YES"<<endl;
         int pos;
         while (getline(oldFileR, copyString)) {
             //Βρίσκει το τελευταίο μπλοκ
@@ -87,47 +83,83 @@ void Actions::add_entry(string existingFile, string newFile){
             */
             pos = copyString.find('</block>');
             id = copyString.substr(0,pos+1);
+            //Δεν αντιγράφει το </block> που είναι στο τελευταίο block που θα μπει η εγγραφή
             if (deleteline.compare(id)!=0 || flag) {
-                temp << copyString +"\n";
+                copyFile << copyString +"\n";
                 if(copyString.compare(findBlock)==0){
                     flag=false;
                 }
             }
         }
         while(getline(newFileR,copyString)){
-            temp<<copyString << "\n";
+            copyFile<<copyString << "\n";
         }
-        temp<<"</block>";
+        copyFile<<"</block>";
     }else{
-        string newblock="</block>";
         stringstream ss,ss2;
         int numB;
         ss<< numOfBlocks;
         ss>>numB;
         numB++;
-        string str;
         ss2<<numB;
         ss2>>numOfBlocks;
-        string deleteline="</block>";
-        while (getline(oldFileR, copyString)) { 
-            //Βρίσκει το τελευταίο μπλοκ
-            if(copyString.compare(findBlock)==0){
-                while (getline(oldFileR, copyString)){
-                    copyString.replace(copyString.find(deleteline),deleteline.length(),"");
-                    return;
-                    //Βρίσκει το τέλος του block και δημιουργεί το νέο block
-                    if(copyString.compare("</block>")==0){
-                        oldFileW<<"\n";
-                        oldFileW<<"<block id=\"" + numOfBlocks+"\""<<"\n";
-                        while(getline(newFileR,copyString)){
-                            oldFileW<<copyString << "\n";
-                        }
-                        oldFileW<<"</block>";
-                        break;
-                    }
-                }
-                break;
-            }
+        //Δημιουργεί ένα νέο αρχείο με το νέο μπλοκ και αυξάνει τον αριθμό των blocks
+        copyFile<<"block id=\"0\" blocks=\"" + numOfBlocks + "</block>\n";
+        getline(oldFileR,copyString);
+        while(getline(oldFileR,copyString)){
+            copyFile<<copyString<<"\n";
         }
+        copyFile<<"<block id=\"" + numOfBlocks+"\""<<"\n";
+        copyFile<<"\n";
+        while(getline(newFileR,copyString)){
+            copyFile<<copyString << "\n";
+        }
+        copyFile<<"</block>";
+    }
+    copyFile.close();
+}
+void Actions::delete_entry(string block, string id){
+    ifstream oldFileR;
+    ofstream copyFile;
+    oldFileR.open("BlockedMap.osm");
+    //app so it doesn't overwrite the file
+    copyFile.open(COPY_FILE_NAME,ios::app);
+    string copyString;
+    bool flagBlock=true,flagNode=true;
+    string deleteBlock="<block id=\"" + block + "\"";
+    int pos;
+    size_t found;
+    int i=0;
+    string node;
+    int length=11+id.length();
+    id=" <node id=\""+id;
+    while (getline(oldFileR, copyString)) {
+        i++;
+            //Βρίσκει το τελευταίο μπλοκ
+            /*
+            if(pos!=-1){
+               id = copyString.substr(0,pos+1);
+            }
+            */
+            pos = copyString.find(id);
+            node = copyString.substr(0,length);
+            //Βρίσκει το block στο οποίο βρίσκεται η εγγραφή
+            found = copyString.find(id);
+            if(copyString.compare(deleteBlock)==0){
+                flagBlock=false;
+            }
+            //Αν είναι στο σωστό block βρίσκει το id της εγγραφής
+            if(!flagBlock && id.compare(node)==0){
+                flagNode=false;
+            }
+            //Μόλις τελείωσει η εγγραφή συνεχίζει ακυρώνει τα flag για να αντιγράψει τα υπόλοιπα δεδομένα
+            if(copyString.compare(" </node>")==0 && !flagBlock && !flagNode){
+                cout<<i<<endl;
+                flagNode=true;
+                flagBlock=true;
+            }
+            if (flagBlock || flagNode) {
+                copyFile << copyString +"\n";
+            }
     }
 }

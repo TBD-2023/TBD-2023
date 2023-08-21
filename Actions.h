@@ -5,9 +5,11 @@
 
 #pragma once
 using namespace std;
-class Actions{
+class Actions
+{
 	public:
     Actions();
     void add_entry(string existingFile, string newFile);
+    void delete_entry(string block, string id);
 };
 #endif

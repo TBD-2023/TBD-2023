@@ -201,7 +201,7 @@
   <tag k="ref" v="060387"/>
   <tag k="shelter" v="yes"/>
  </node>
-<node id="2786690729" visible="true" version="5" changeset="128015848" timestamp="2022-10-24T21:51:57Z" user="Map-Finder" uid="9221753" lat="37.9680215" lon="23.7101292">
+ <node id="2786690729" visible="true" version="5" changeset="128015848" timestamp="2022-10-24T21:51:57Z" user="Map-Finder" uid="9221753" lat="37.9680215" lon="23.7101292">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="ΣΤΑΘΜΟΣ ΗΣΑΠ ΠΕΤΡΑΛΩΝΩΝ"/>
@@ -228,7 +228,7 @@
   <tag k="ref" v="060398"/>
   <tag k="route_ref" v="035;500"/>
  </node>
-<node id="2786692250" visible="true" version="6" changeset="131809797" timestamp="2023-01-28T14:31:44Z" user="nikospag" uid="609559" lat="37.9729792" lon="23.7103802">
+ <node id="2786692250" visible="true" version="6" changeset="131809797" timestamp="2023-01-28T14:31:44Z" user="nikospag" uid="609559" lat="37.9729792" lon="23.7103802">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="ΤΑΧΥΔΡΟΜΕΙΟ"/>
@@ -262,7 +262,7 @@
   <tag k="public_transport" v="stop_position"/>
   <tag k="ref" v="060388"/>
  </node>
-<node id="2786693565" visible="true" version="5" changeset="126455597" timestamp="2022-09-21T09:30:22Z" user="Map-Finder" uid="9221753" lat="37.9714866" lon="23.7048715">
+ <node id="2786693565" visible="true" version="5" changeset="126455597" timestamp="2022-09-21T09:30:22Z" user="Map-Finder" uid="9221753" lat="37.9714866" lon="23.7048715">
   <tag k="bench" v="yes"/>
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
@@ -290,7 +290,7 @@
   <tag k="ref" v="060287"/>
   <tag k="shelter" v="yes"/>
  </node>
-<node id="2786693729" visible="true" version="11" changeset="127487453" timestamp="2022-10-13T19:17:14Z" user="Αντρέ" uid="1748423" lat="37.9692342" lon="23.7107964">
+ <node id="2786693729" visible="true" version="11" changeset="127487453" timestamp="2022-10-13T19:17:14Z" user="Αντρέ" uid="1748423" lat="37.9692342" lon="23.7107964">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="ΦΑΡΜΑΚΕΙΟ"/>
@@ -422,7 +422,7 @@
   <tag k="name" v="Κλειδοκράτορας"/>
   <tag k="shop" v="locksmith"/>
  </node>
-<node id="3452672564" visible="true" version="2" changeset="79727175" timestamp="2020-01-18T10:35:37Z" user="Αντρέ" uid="1748423" lat="37.9677811" lon="23.7096456">
+ <node id="3452672564" visible="true" version="2" changeset="79727175" timestamp="2020-01-18T10:35:37Z" user="Αντρέ" uid="1748423" lat="37.9677811" lon="23.7096456">
   <tag k="shop" v="seafood"/>
  </node>
  <node id="3452673682" visible="true" version="6" changeset="127488052" timestamp="2022-10-13T19:35:47Z" user="Αντρέ" uid="1748423" lat="37.9677734" lon="23.7097097">
@@ -459,7 +459,7 @@
   <tag k="outdoor_seating" v="pedestrian_zone"/>
   <tag k="phone" v="+30 69 7923 4353"/>
  </node>
-<node id="3485574768" visible="true" version="6" changeset="103440735" timestamp="2021-04-22T22:54:13Z" user="Map-Finder" uid="9221753" lat="37.9682998" lon="23.7087260">
+ <node id="3485574768" visible="true" version="6" changeset="103440735" timestamp="2021-04-22T22:54:13Z" user="Map-Finder" uid="9221753" lat="37.9682998" lon="23.7087260">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:country" v="GR"/>
   <tag k="addr:housenumber" v="170"/>
@@ -486,7 +486,7 @@
   <tag k="name" v="Περίπτερο"/>
   <tag k="shop" v="kiosk"/>
  </node>
-node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="2020-02-22T00:46:39Z" user="Αντρέ" uid="1748423" lat="37.9678817" lon="23.7085204">
+ <node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="2020-02-22T00:46:39Z" user="Αντρέ" uid="1748423" lat="37.9678817" lon="23.7085204">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="178"/>
   <tag k="addr:street" v="Θεσσαλονίκης"/>
@@ -521,7 +521,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
  <node id="3485574774" visible="true" version="1" changeset="30604552" timestamp="2015-04-29T04:23:17Z" user="mappas" uid="916173" lat="37.9689415" lon="23.7082944">
   <tag k="shop" v="bakery"/>
  </node>
-<node id="3485574791" visible="true" version="1" changeset="30604552" timestamp="2015-04-29T04:23:18Z" user="mappas" uid="916173" lat="37.9679056" lon="23.7074609">
+ <node id="3485574791" visible="true" version="1" changeset="30604552" timestamp="2015-04-29T04:23:18Z" user="mappas" uid="916173" lat="37.9679056" lon="23.7074609">
   <tag k="shop" v="kiosk"/>
  </node>
  <node id="3485574792" visible="true" version="2" changeset="81663005" timestamp="2020-03-02T05:17:52Z" user="Allison P" uid="9097970" lat="37.9676835" lon="23.7065295">
@@ -543,7 +543,8 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="name" v="Δυτικά του Φιλοπαπου"/>
   <tag k="name:en" v="Ditika tou Filopappou"/>
  </node>
-<tag k="name" v="Market In"/>
+ <node id="3536221394" visible="true" version="4" changeset="118333540" timestamp="2022-03-10T17:47:46Z" user="beatnickgr" uid="936280" lat="37.9701465" lon="23.7132781">
+  <tag k="name" v="Market In"/>
   <tag k="shop" v="supermarket"/>
  </node>
  <node id="3716195272" visible="true" version="2" changeset="43566926" timestamp="2016-11-11T19:29:26Z" user="makmar" uid="411246" lat="37.9675519" lon="23.7103483">
@@ -580,7 +581,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="phone" v="+306972278478"/>
   <tag k="website" v="http://www.anteti.gr/"/>
  </node>
-<node id="3716237306" visible="true" version="5" changeset="118333540" timestamp="2022-03-10T17:47:46Z" user="beatnickgr" uid="936280" lat="37.9699319" lon="23.7131712">
+ <node id="3716237306" visible="true" version="5" changeset="118333540" timestamp="2022-03-10T17:47:46Z" user="beatnickgr" uid="936280" lat="37.9699319" lon="23.7131712">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="32"/>
   <tag k="addr:postcode" v="11851"/>
@@ -617,7 +618,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="amenity" v="pharmacy"/>
   <tag k="healthcare" v="pharmacy"/>
  </node>
-<node id="3718635818" visible="true" version="7" changeset="103440735" timestamp="2021-04-22T22:54:13Z" user="Map-Finder" uid="9221753" lat="37.9690312" lon="23.7126543">
+ <node id="3718635818" visible="true" version="7" changeset="103440735" timestamp="2021-04-22T22:54:13Z" user="Map-Finder" uid="9221753" lat="37.9690312" lon="23.7126543">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:country" v="GR"/>
   <tag k="addr:housenumber" v="48"/>
@@ -701,7 +702,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="name" v="Flatwhite"/>
   <tag k="outdoor_seating" v="pedestrian_zone"/>
  </node>
-<node id="4015294088" visible="true" version="1" changeset="37317000" timestamp="2016-02-19T20:16:53Z" user="mappas" uid="916173" lat="37.9690573" lon="23.7081773">
+ <node id="4015294088" visible="true" version="1" changeset="37317000" timestamp="2016-02-19T20:16:53Z" user="mappas" uid="916173" lat="37.9690573" lon="23.7081773">
   <tag k="shop" v="photo"/>
  </node>
  <node id="4015296689" visible="true" version="1" changeset="37317000" timestamp="2016-02-19T20:16:53Z" user="mappas" uid="916173" lat="37.9689995" lon="23.7081413">
@@ -776,7 +777,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="backrest" v="yes"/>
   <tag k="material" v="wood"/>
  </node>
-<node id="4029237900" visible="true" version="3" changeset="72959145" timestamp="2019-08-02T23:42:06Z" user="0000FF berries" uid="2039188" lat="37.9695298" lon="23.7099776">
+ <node id="4029237900" visible="true" version="3" changeset="72959145" timestamp="2019-08-02T23:42:06Z" user="0000FF berries" uid="2039188" lat="37.9695298" lon="23.7099776">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:street" v="Θεσσαλονίκης"/>
   <tag k="amenity" v="cafe"/>
@@ -813,7 +814,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="backrest" v="yes"/>
   <tag k="material" v="wood"/>
  </node>
-<node id="4029284164" visible="true" version="1" changeset="37475135" timestamp="2016-02-27T03:44:37Z" user="mappas" uid="916173" lat="37.9704467" lon="23.7100477">
+ <node id="4029284164" visible="true" version="1" changeset="37475135" timestamp="2016-02-27T03:44:37Z" user="mappas" uid="916173" lat="37.9704467" lon="23.7100477">
   <tag k="amenity" v="bench"/>
   <tag k="backrest" v="yes"/>
   <tag k="material" v="wood"/>
@@ -904,7 +905,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="phone" v="+30 21 0347 2387"/>
   <tag k="shop" v="confectionery"/>
  </node>
-<node id="4278096552" visible="true" version="2" changeset="44307040" timestamp="2016-12-10T16:44:26Z" user="makmar" uid="411246" lat="37.9696157" lon="23.7135101">
+ <node id="4278096552" visible="true" version="2" changeset="44307040" timestamp="2016-12-10T16:44:26Z" user="makmar" uid="411246" lat="37.9696157" lon="23.7135101">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="36"/>
   <tag k="addr:postcode" v="11851"/>
@@ -1195,7 +1196,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="addr:housenumber" v="40"/>
   <tag k="addr:street" v="Νεφέλης"/>
  </node>
-<node id="4553125486" visible="true" version="1" changeset="44386323" timestamp="2016-12-13T23:23:04Z" user="Αντρέ" uid="1748423" lat="37.9692540" lon="23.7054540">
+ <node id="4553125486" visible="true" version="1" changeset="44386323" timestamp="2016-12-13T23:23:04Z" user="Αντρέ" uid="1748423" lat="37.9692540" lon="23.7054540">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="46"/>
   <tag k="addr:street" v="Νεφέλης"/>
@@ -1226,36 +1227,36 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="addr:housenumber" v="21"/>
   <tag k="addr:street" v="Ηούς"/>
  </node>
-  <node id="4553128045" visible="true" version="1" changeset="44386350" timestamp="2016-12-13T23:25:31Z" user="Αντρέ" uid="1748423" lat="37.9693470" lon="23.7052421">
+ <node id="4553128045" visible="true" version="1" changeset="44386350" timestamp="2016-12-13T23:25:31Z" user="Αντρέ" uid="1748423" lat="37.9693470" lon="23.7052421">
    <tag k="addr:city" v="Αθήνα"/>
    <tag k="addr:housenumber" v="48"/>
    <tag k="addr:street" v="Νεφέλης"/>
-  </node>
-  <node id="4553128046" visible="true" version="1" changeset="44386353" timestamp="2016-12-13T23:25:50Z" user="Αντρέ" uid="1748423" lat="37.9695225" lon="23.7047754">
+ </node>
+ <node id="4553128046" visible="true" version="1" changeset="44386353" timestamp="2016-12-13T23:25:50Z" user="Αντρέ" uid="1748423" lat="37.9695225" lon="23.7047754">
    <tag k="addr:city" v="Αθήνα"/>
    <tag k="addr:housenumber" v="56"/>
    <tag k="addr:street" v="Νεφέλης"/>
-  </node>
-  <node id="4553128281" visible="true" version="1" changeset="44386362" timestamp="2016-12-13T23:27:04Z" user="Αντρέ" uid="1748423" lat="37.9696346" lon="23.7045715">
+ </node>
+ <node id="4553128281" visible="true" version="1" changeset="44386362" timestamp="2016-12-13T23:27:04Z" user="Αντρέ" uid="1748423" lat="37.9696346" lon="23.7045715">
    <tag k="addr:city" v="Αθήνα"/>
    <tag k="addr:housenumber" v="18"/>
    <tag k="addr:street" v="Ιδομενέως"/>
-  </node>
-  <node id="4553128750" visible="true" version="1" changeset="44386383" timestamp="2016-12-13T23:28:33Z" user="Αντρέ" uid="1748423" lat="37.9696684" lon="23.7043865">
+ </node>
+ <node id="4553128750" visible="true" version="1" changeset="44386383" timestamp="2016-12-13T23:28:33Z" user="Αντρέ" uid="1748423" lat="37.9696684" lon="23.7043865">
    <tag k="addr:city" v="Αθήνα"/>
    <tag k="addr:housenumber" v="60"/>
    <tag k="addr:street" v="Νεφέλης"/>
-  </node>
-  <node id="4553132924" visible="true" version="2" changeset="44394911" timestamp="2016-12-14T11:12:38Z" user="makmar" uid="411246" lat="37.9686883" lon="23.7054674">
+ </node>
+ <node id="4553132924" visible="true" version="2" changeset="44394911" timestamp="2016-12-14T11:12:38Z" user="makmar" uid="411246" lat="37.9686883" lon="23.7054674">
    <tag k="addr:city" v="Αθήνα"/>
    <tag k="addr:housenumber" v="40"/>
    <tag k="addr:street" v="Αριστοβούλου"/>
-  </node>
-  <node id="4553132988" visible="true" version="1" changeset="44386481" timestamp="2016-12-13T23:38:25Z" user="Αντρέ" uid="1748423" lat="37.9686429" lon="23.7057249">
+ </node>
+ <node id="4553132988" visible="true" version="1" changeset="44386481" timestamp="2016-12-13T23:38:25Z" user="Αντρέ" uid="1748423" lat="37.9686429" lon="23.7057249">
    <tag k="addr:city" v="Αθήνα"/>
    <tag k="addr:housenumber" v="38"/>
    <tag k="addr:street" v="Αριστοβούλου"/>
-  </node>
+ </node>
  <node id="4553133991" visible="true" version="1" changeset="44386483" timestamp="2016-12-13T23:38:45Z" user="Αντρέ" uid="1748423" lat="37.9685403" lon="23.7059381">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="36"/>
@@ -1454,7 +1455,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="phone" v="2103420160"/>
   <tag k="shop" v="beauty"/>
  </node>
-<node id="4654986886" visible="true" version="1" changeset="45733604" timestamp="2017-02-02T03:07:28Z" user="radiobuzzer" uid="96446" lat="37.9724245" lon="23.7115696">
+ <node id="4654986886" visible="true" version="1" changeset="45733604" timestamp="2017-02-02T03:07:28Z" user="radiobuzzer" uid="96446" lat="37.9724245" lon="23.7115696">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="77"/>
   <tag k="addr:street" v="Θεσσαλονίκης"/>
@@ -1643,7 +1644,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="clothes" v="children"/>
   <tag k="shop" v="clothes"/>
  </node>
-<node id="5279268710" visible="true" version="1" changeset="54560980" timestamp="2017-12-12T09:21:35Z" user="Αντρέ" uid="1748423" lat="37.9675222" lon="23.7105111">
+ <node id="5279268710" visible="true" version="1" changeset="54560980" timestamp="2017-12-12T09:21:35Z" user="Αντρέ" uid="1748423" lat="37.9675222" lon="23.7105111">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="23"/>
   <tag k="addr:street" v="Δρυόπων"/>
@@ -1692,7 +1693,6 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="name" v="Μαύρο Πιπέρι"/>
   <tag k="shop" v="convenience"/>
  </node>
-
  <node id="5664667104" visible="true" version="2" changeset="59884825" timestamp="2018-06-15T21:51:55Z" user="beatnickgr" uid="936280" lat="37.9688434" lon="23.7082018">
   <tag k="highway" v="stop"/>
  </node>
@@ -2002,7 +2002,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="addr:housenumber" v="8"/>
   <tag k="addr:street" v="Αιολέων"/>
  </node>
-<node id="6223870596" visible="true" version="1" changeset="66488815" timestamp="2019-01-21T00:20:01Z" user="Αντρέ" uid="1748423" lat="37.9727918" lon="23.7071557">
+ <node id="6223870596" visible="true" version="1" changeset="66488815" timestamp="2019-01-21T00:20:01Z" user="Αντρέ" uid="1748423" lat="37.9727918" lon="23.7071557">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="165"/>
   <tag k="addr:street" v="Πειραιώς"/>
@@ -2022,7 +2022,7 @@ node id="3485574772" visible="true" version="5" changeset="81336591" timestamp="
   <tag k="description" v="Εργαστήρι θεατρικού και εικαστικού παιχνιδιού"/>
   <tag k="name" v="Κόκκινη κλωστή…"/>
  </node>
-<node id="6317859972" visible="true" version="1" changeset="67798280" timestamp="2019-03-05T10:12:30Z" user="Αντρέ" uid="1748423" lat="37.9678373" lon="23.7078512">
+ <node id="6317859972" visible="true" version="1" changeset="67798280" timestamp="2019-03-05T10:12:30Z" user="Αντρέ" uid="1748423" lat="37.9678373" lon="23.7078512">
   <tag k="addr:city" v="Αθήνα"/>
   <tag k="addr:housenumber" v="8"/>
   <tag k="addr:street" v="Αριστοβούλου"/>

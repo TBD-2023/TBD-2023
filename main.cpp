@@ -18,16 +18,14 @@ static std::string const COULD_NOT_OPEN = "Could not open ";
 */
 int main ()
 {
-    /*
     Actions x;
-    x.add_entry("BlockedMap.osm","Amazing.osm");
+    x.delete_entry("3","4553128281");
     if(remove("BlockedMap.osm")==0){
-        rename("NewFile.osm","BlockedMap.osm");
+        rename("copyFile.osm","BlockedMap.osm");
     }else{
         cout<<"OH NO"<<endl;
     }
-    remove("copyFile.osm");
-    */
+   /*
     ifstream in("BlockedMap.osm");
     ofstream out("BlockedMap.osm",ios::app);
     string v1, v2, v3, v4;
@@ -38,6 +36,7 @@ int main ()
     out << in.rdbuf();
     out.close();
     in.close();
+    */
     return 0;
     /*
     string copyString;
