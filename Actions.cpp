@@ -152,3 +152,54 @@ void Actions::add_entry(string existingFile, string newFile){
     remove("BlockedMap.osm");
     rename("copyFile.osm","BlockedMap.osm");
 }
+int copyDelete(string block,string id){
+    ifstream oldFileR;
+    ofstream copyFile;
+    oldFileR.open("BlockedMap.osm");
+    //app so it doesn't overwrite the file
+    copyFile.open(COPY_FILE_NAME, ios::app);
+    string copyString;
+    bool flagBlock = true, flagNode = true;
+    string deleteBlock = "<block id=\"" + block + "\"";
+    int pos;
+    size_t found;
+    int i = 0;
+    string node;
+    int length = 11 + id.length();
+    id = " <node id=\"" + id;
+    while (getline(oldFileR, copyString)) {
+        i++;
+        //Βρίσκει το τελευταίο μπλοκ
+        /*
+        if(pos!=-1){
+           id = copyString.substr(0,pos+1);
+        }
+        */
+        pos = copyString.find(id);
+        node = copyString.substr(0, length);
+        //Βρίσκει το block στο οποίο βρίσκεται η εγγραφή
+        found = copyString.find(id);
+        if (copyString.compare(deleteBlock) == 0) {
+            flagBlock = false;
+        }
+        //Αν είναι στο σωστό block βρίσκει το id της εγγραφής
+        if (!flagBlock && id.compare(node) == 0) {
+            flagNode = false;
+        }
+        //Μόλις τελείωσει η εγγραφή συνεχίζει ακυρώνει τα flag για να αντιγράψει τα υπόλοιπα δεδομένα
+        if (copyString.compare(" </node>") == 0 && !flagBlock && !flagNode) {
+            flagNode = true;
+            flagBlock = true;
+        }
+        if (flagBlock || flagNode) {
+            copyFile << copyString + "\n";
+        }
+    }
+    return 2;
+}
+void Actions::delete_entry(string block, string id) {
+    std::future<int>myFuture = std::async(&copyDelete,block,id);
+    int result=myFuture.get();
+    remove("BlockedMap.osm");
+    rename("copyFile.osm","BlockedMap.osm");
+}

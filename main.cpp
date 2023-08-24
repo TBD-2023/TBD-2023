@@ -33,7 +33,7 @@ std::string getSubstringBetween1(std::string input){
 int main ()
 {
     Actions x;
-    x.add_entry(INPUT_FILE_NAME,"Amazing.osm");
+    x.delete_entry("4","6119722278");
     return 0;
 }
     //Actions x;

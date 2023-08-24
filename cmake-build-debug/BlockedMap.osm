@@ -1,7 +1,5 @@
 <block id="0" blocks="5" minlat="41.4438000" minlon="26.4812000" maxlat="41.5322000" maxlon="26.5952000" </block>
 <block id="1"
- <node id="250664440" visible="true" version="18" changeset="65059372" timestamp="2018-11-30T22:01:24Z" user="mama_bear" uid="6980194" lat="37.9702600" lon="23.7028403">
-  <tag k="highway" v="traffic_signals"/>
  </node>
  <node id="353770068" visible="true" version="15" changeset="76684586" timestamp="2019-11-06T08:16:30Z" user="Burcu Bayasli" uid="9237592" lat="37.9671639" lon="23.7081987">
   <tag k="access" v="no"/>
@@ -1232,10 +1230,6 @@
    <tag k="addr:housenumber" v="48"/>
    <tag k="addr:street" v="Νεφέλης"/>
  </node>
- <node id="4553128046" visible="true" version="1" changeset="44386353" timestamp="2016-12-13T23:25:50Z" user="Αντρέ" uid="1748423" lat="37.9695225" lon="23.7047754">
-   <tag k="addr:city" v="Αθήνα"/>
-   <tag k="addr:housenumber" v="56"/>
-   <tag k="addr:street" v="Νεφέλης"/>
  </node>
  <node id="4553128281" visible="true" version="1" changeset="44386362" timestamp="2016-12-13T23:27:04Z" user="Αντρέ" uid="1748423" lat="37.9696346" lon="23.7045715">
    <tag k="addr:city" v="Αθήνα"/>
@@ -1809,9 +1803,6 @@
   <tag k="addr:housenumber" v="8"/>
   <tag k="addr:street" v="Ηούς"/>
  </node>
- <node id="6119722278" visible="true" version="1" changeset="65211160" timestamp="2018-12-05T17:52:59Z" user="mama_bear" uid="6980194" lat="37.9720221" lon="23.7087147">
-  <tag k="addr:housenumber" v="24"/>
-  <tag k="addr:street" v="Ηούς"/>
  </node>
  <node id="6119722279" visible="true" version="1" changeset="65211160" timestamp="2018-12-05T17:52:59Z" user="mama_bear" uid="6980194" lat="37.9707228" lon="23.7092699">
   <tag k="addr:housenumber" v="65"/>
