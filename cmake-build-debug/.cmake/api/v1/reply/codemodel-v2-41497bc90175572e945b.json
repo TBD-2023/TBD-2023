@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TBD_2023",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TBD_2023::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TBD_2023-Debug-2d9605ad90c38aba1f1d.json",
+					"name" : "TBD_2023",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2/Documents/GitHub/TBD-2023/cmake-build-debug",
+		"source" : "C:/Users/\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2/Documents/GitHub/TBD-2023"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

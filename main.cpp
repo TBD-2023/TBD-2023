@@ -3,28 +3,41 @@
 #include <list>
 #include <sstream>
 #include <string.h>
-#include "Actions.h"
-#include "Actions.cpp"
 #include <cstdio>
 #include <string>
-#include <cstdlib>
-//#include "r_star_tree.hpp"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <time.h>
+#include <future>
+#include <chrono>
+#include <sys/types.h>
+#include <condition_variable>
+#include "Actions.h"
 using namespace std;
-/*
+
 //Ένα πρόγραμμα C++ αρχίζει με τη main()
 static std::string const INPUT_FILE_NAME ="BlockedMap.osm";
 static std::string const COPY_FILE_NAME ="copyFile.osm";
 static std::string const COULD_NOT_OPEN = "Could not open ";
-*/
+std::string getSubstringBetween1(std::string input){
+    std::string startStr="blocks=\"";
+    std::string endStr="\"";
+    std::size_t startPos=input.find(startStr);
+    startPos+=startStr.length();
+    std::size_t endPos=input.find(endStr,startPos);
+    return input.substr(startPos,endPos-startPos);
+}
 int main ()
 {
     Actions x;
-    x.delete_entry("3","4553128281");
-    if(remove("BlockedMap.osm")==0){
-        rename("copyFile.osm","BlockedMap.osm");
-    }else{
-        cout<<"OH NO"<<endl;
-    }
+    x.add_entry(INPUT_FILE_NAME,"Amazing.osm");
+    return 0;
+}
+    //Actions x;
+    //x.add_entry("BlockedMap.osm","Amazing.osm");
    /*
     ifstream in("BlockedMap.osm");
     ofstream out("BlockedMap.osm",ios::app);
@@ -37,7 +50,6 @@ int main ()
     out.close();
     in.close();
     */
-    return 0;
     /*
     string copyString;
     ifstream oldFileR;
@@ -63,7 +75,7 @@ int main ()
         //temp << copyString << endl;
     }
     */
-}
+
 /*
     ifstream inputFile;
     ofstream copyFile;
@@ -85,7 +97,7 @@ int main ()
     string copyString;
     string findBlock="<block id=\"" + numOfBlocks + "\"";
     cout<<findBlock<<endl;
-    while (getline(inputFile, copyString)) { 
+    while (getline(inputFile, copyString)) {
         //Copying the data of a specific block
         if(copyString.compare(findBlock)==0){
             copyFile << copyString << "\n";
@@ -114,7 +126,7 @@ int main ()
     string copyString;
     ifstream copyFileRead;
     copyFileRead.open(COPY_FILE_NAME);
-    while (getline(copyFileRead, copyString)) { 
+    while (getline(copyFileRead, copyString)) {
         copyFile << copyString << "\n";
     }
 	inputFile.close();
@@ -132,7 +144,7 @@ int main ()
 string copyString;
     ifstream copyFileRead;
     copyFileRead.open(COPY_FILE_NAME);
-    while (getline(inputFile, copyString)) { 
+    while (getline(inputFile, copyString)) {
         //Copying the data of a specific block
         if(copyString.compare("<block id=\"3\"")==0){
             copyFile << copyString << "\n";
